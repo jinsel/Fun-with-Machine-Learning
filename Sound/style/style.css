@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Overpass&display=swap');
+body{
+    height: 100%;
+    width: 100%;
+    background: #caf0f8;
+}
+.wrapper{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    
+}
+h1{ 
+    font-family: 'Anton',sans-serif;
+    font-weight: normal;
+    font-size: 55px;
+    letter-spacing: 4px;
+    padding: 50px 0 20px;
+    color: #edae49;
+    text-align: center;
+}
+p{
+    padding: 0;
+    font-family:'Overpass',sans-serif;
+    font-weight: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width:800px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.container .card{
+    position: relative;
+}
+
+.container .card .face{
+    width: 300px;
+    height: 200px;
+    transition: 0.5s;
+}
+.container .card .face.face1{
+    position: relative;
+    background: #333;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    z-index: 1;
+    transform: translateY(100px);
+} 
+.container .card:hover .face.face1{
+    background: #edae49;
+    transform: translateY(0);
+}
+.container .card .face.face1 .content{
+    opacity: 0.9;
+    transition: 0.5s;
+}
+
+.container .card:hover .face.face1 .content{
+    opacity: 1;
+}
+
+.container .card .face.face1 .content h3 a {
+    margin: 10px 0 0;
+    padding: 0;
+    color: white;
+    text-align: center;
+    font-size: 1.3em;
+    text-decoration: none;
+}
+.container .card .face.face1 .content h3 a:hover{
+    margin: 10px 0 0;
+    padding: 0;
+    color: #264653;
+    text-align: center;
+    text-decoration: none;
+}
+.container .card .face.face2{
+    position: relative;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.8);
+    transform: translateY(-100px);
+}
+.container .card:hover .face.face2{
+    transform: translateY(0);
+}
+.container .card .face.face2 .content p{
+    margin: 0;
+    padding: 0;
+}
+.container .card .face.face2 .content a{
+    margin: 15px 0 0;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 900;
+    color: #333;
+    padding: 5px;
+    border: 1px solid #333;
+}
+.container .card .face.face2 .content a:hover{
+    background: #333;
+    color: #fff;
+    display: flex;
+}
+
+/* Responsive rules*/
+@media screen and (max-width: 1024px) {
+    .container{
+        width: 1000px;
+        position: relative;
+        justify-content: space-around;
+    }
+    .container .card .face{
+    width: 200px;
+    height: 200px;
+    transition: 0.5s;
+}
+}
+@media screen and (max-width: 768px) {
+    .container{
+        width: 1000px;
+        position: relative;
+        justify-content:center;
+    }
+    .container .card .face{
+    width: 200px;
+    height: 200px;
+    transition: 0.5s;
+}
+}
+@media screen and (max-width:375px ){
+    .container{
+        width: 600px;
+    }
+    .container .card .face{
+    width: 200px;
+    height: 200px;
+    transition: 0.5s;
+    }
+    .container .card .face.face1 .content h3{
+    margin: 5px 0 0;
+    padding: 0;
+    color: white;
+    text-align: center;
+    font-size: 1em;
+}
+.container .card .face.face2{
+    position: relative;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    box-sizing: border-box;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.8);
+    transform: translateY(-100px);
+}
+}
+.footer{
+    text-align: center;
+    padding: 1px 2px;
+}
+.social-icon-link {
+    margin-right: 1px;
+    margin-left: 1px;
+    padding: 1px;
+    opacity: 0.87;
+    transition: opacity 300ms ease;
+}
+.w-inline-block {
+    max-width: 100%;
+    display: inline-block;
+}
+.footer-text-up {
+    font-family: sans-serif;
+    padding-top: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 20px;
+    line-height: 10px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.footer img{
+    width: 80%;
+}
+.footer-text {
+    font-family: sans-serif;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    font-size: 10px;
+    line-height: 10px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
