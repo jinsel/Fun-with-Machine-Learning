@@ -656,7 +656,7 @@ p{
    .contain{
         width:90%;
         position: relative;
-        padding-left:3em;
+        padding-left:1.5em;
         justify-content: space-around;
     }
     .btn{
@@ -792,14 +792,15 @@ p{
         flex-wrap: wrap;
         justify-content:space-between;
         align-items: center;
-        margin-left:19%;
+        margin-left: 35px;
     }
     .container .card .face{
-        width: 350px;
+        width: 300px;
         height: 220px;
         transition: 0.5s;
 }
 }
+
 
 .footer{
     text-align: center;
