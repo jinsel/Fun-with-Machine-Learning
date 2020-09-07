@@ -574,12 +574,13 @@ body{
         transform: translateY(-2000px);
     }
 }
+
 h1{ 
     font-family:'Anton',sans-serif;
     font-weight: normal;
     font-size: 55px;
     letter-spacing: 4px;
-    padding: 0 0 20px;
+    padding: 20px 0 10px;
     color: #ff0057;
     text-align: center;
 }
@@ -673,6 +674,7 @@ p{
 }
 .container .card{
     position: relative;
+    border-radius: 10px;
 }
 
 .container .card .face{
@@ -681,6 +683,7 @@ p{
     transition: 0.5s;
 }
 .container .card .face.face1{
+    
     position: relative;
     background: #e5e5e5;
     display: flex;

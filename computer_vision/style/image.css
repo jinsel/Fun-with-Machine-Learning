@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Overpass&display=swap');
+body{
+    height: 100%;
+    width: 100%;
+    background: #003049;
+}
+.wrapper{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    
+}
+.home-btn{
+    display:flex;
+    width:4%;
+    margin: 10px;
+    background: aliceblue;
+}
+.home-btn a{
+    
+    text-decoration: none;
+    text-align: left;
+    font-family: 'Anton',sans-serif;
+    color: #333;
+    padding: 10px;
+}
+.home-btn a:hover{
+    background:#f77f00;
+    color: #fff;
+    display: flex;
+}
+h1{ 
+    font-family: 'Anton',sans-serif;
+    font-weight: normal;
+    font-size: 55px;
+    letter-spacing: 4px;
+    padding: 50px 0 20px;
+    color: #f77f00;
+    text-align: center;
+}
+p{
+    padding: 0;
+    font-family: 'Overpass',sans-serif;
+    font-weight: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contain{
+    width: 60%;
+    padding-left: 21em;
+    position: relative;
+    color: aliceblue;
+}
+.container{
+    width:800px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.btn{
+    margin-left: 90%;
+    margin-bottom: 10px;
+    background: aliceblue;
+}
+.btn a{
+    display: inline-block;
+    text-decoration: none;
+    font-family: 'Anton',sans-serif;
+    color: #333;
+    padding: 5px;
+    border: 1px solid #333;
+}
+.btn a:hover{
+    background:#f77f00;
+    color: #fff;
+    display: flex;
+    width: 100%;
+}
+.services {
+    margin-bottom: 4em;
+}
+
+.service {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.card{
+	display: grid;
+	grid-template-columns: 300px;
+	grid-template-rows: 210px 210px;
+	grid-template-areas: "image" "text";
+	border-radius: 18px;
+	background:white;
+	box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+	text-align: center;
+	transition: 0.5s ease;
+	cursor: pointer;
+	margin: 10px 10px 0; 
+    margin-bottom: 30px;
+}
+
+.card-image{
+	grid-area: image;
+	background: url("../img/design.png");
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	background-size: cover;
+}
+
+.card-text{
+	grid-area: text;
+	margin: 25px;
+}
+
+.card-text p{
+	color: var(--clr-dark);
+	font-size: 15px;
+	font-weight: 300;
+}
+
+.card-text h2{
+	margin-top: 0px;
+	font-size: 28px;
+    font-family: var(--ff-primary);
+    color: var(--clr-accent);
+
+}
+
+.card:hover{
+	transform: scale(1.1);
+	box-shadow: 5px 5px 15px rgba(0,0,0,0.5);
+}
+
+
+.card-image.card-2{
+	background:url(../img/editing.png);
+	background-size: cover;
+}
+
+.card-text.card2 .date{
+	color:rgb(255,77,7);
+}
+
+.card-text.card2 .border{
+	border-left: 1px solid rgb(185, 67,20);
+	border-right: 1px solid rgb(185,67,20);
+}
+
+
+.footer{
+    text-align: center;
+    padding: 1px 2px;
+}
+.social-icon-link {
+    margin-right: 1px;
+    margin-left: 1px;
+    padding: 1px;
+    opacity: 0.87;
+    transition: opacity 300ms ease;
+}
+.w-inline-block {
+    max-width: 100%;
+    display: inline-block;
+}
+.footer img{
+    width: 80%;
+}
+.footer-text {
+    color:white;
+    font-family:sans-serif;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    font-size: 10px;
+    line-height: 10px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
