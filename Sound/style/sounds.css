@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Overpass&display=swap');
-
 body{
     height: 100%;
     width: 100%;
     background-color: #9f10eb;
-    background-image: linear-gradient(0deg, #9f10eb 0%, #0d0e52 100%);
+background-image: linear-gradient(0deg, #9f10eb 0%, #2a9d8f 100%);
+
 }
+
 :root {
   font-size: 16px;
   font-family: 'Overpass',sans-serif;
@@ -198,7 +199,7 @@ body::-webkit-scrollbar-thumb {
     padding: 10px;
 }
 .home-btn a:hover{
-    background:#f77f00;
+    background:#fca311;
     color: #fff;
     display: flex;
 }
@@ -208,7 +209,7 @@ h1{
     font-size: 55px;
     letter-spacing: 4px;
     padding: 50px 0 20px;
-    color: #f77f00;
+    color: #fca311;
     text-align: center;
 }
 p{
@@ -247,7 +248,7 @@ p{
     border: 1px solid #333;
 }
 .btn a:hover{
-    background:#f77f00;
+    background:#fca311;
     color: #fff;
     display: flex;
     width: 100%;
@@ -278,7 +279,7 @@ p{
 
 .card-image{
 	grid-area: image;
-	background: url("../img/design.png");
+	background: url("../img/detection.png");
 	border-top-left-radius: 15px;
 	border-top-right-radius: 15px;
 	background-size: cover;
@@ -310,7 +311,7 @@ p{
 
 
 .card-image.card-2{
-	background:url(../img/editing.png);
+	background:url(../img/pitch.png);
 	background-size: cover;
 }
 

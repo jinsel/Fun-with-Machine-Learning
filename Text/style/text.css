@@ -1,179 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Overpass&display=swap');
-
 body{
     height: 100%;
     width: 100%;
-    background-color: #9f10eb;
-    background-image: linear-gradient(0deg, #9f10eb 0%, #0d0e52 100%);
+    background-color: #42959c;
+background-image: linear-gradient(0deg, #42959c 0%, #27028c 100%);
+
 }
-:root {
-  font-size: 16px;
-  font-family: 'Overpass',sans-serif;
-  --text-primary: #b6b6b6;
-  --text-secondary: #ececec;
-  --bg-primary: #23232e;
-  --bg-secondary: #141418;
-  --transition-speed: 600ms;
-}
-
-body::-webkit-scrollbar {
-  width: 0.25rem;
-}
-
-body::-webkit-scrollbar-track {
-  background: #1e1e24;
-}
-
-body::-webkit-scrollbar-thumb {
-  background: #6649b8;
-}
-
-.navbar {
-  position: fixed;
-  transition: width 600ms ease;
-  background-color: ;
-}
-
-.navbar-nav {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 100%;
-}
-
-.nav-item {
-  width: 100%;
-}
-
-.nav-item:last-child {
-  margin-top: auto;
-}
-
-.nav-link {
-  display: flex;
-  align-items: center;
-  height: 5rem;
-  color: white;
-  text-decoration: none;
-  filter: grayscale(100%) opacity(0.7);
-  transition: var(--transition-speed);
-}
-
-.nav-link:hover {
-  filter: grayscale(0%) opacity(1);
-  color: var(--text-secondary);
-}
-.nav-link.menu-item:hover{
-    color: #f77f00;
-}
-
-.link-text {
-  display: none;
-  margin-left: 1rem;
-}
-.link-text:hover{
-    color: #f76a00;
-}
-
-.nav-link svg {
-  width: 2rem;
-  min-width: 2rem;
-  margin: 0 1.5rem;
-}
-
-.logo {
-  font-weight: bold;
-  text-transform: uppercase;
-  margin-bottom: 1rem;
-  text-align: center;
-  color: var(--text-secondary);
-  font-size: 1.5rem;
-  letter-spacing: 0.3ch;
-  width: 100%;
-}
-
-.logo svg {
-  transform: rotate(0deg);
-  transition: var(--transition-speed);
-}
-
-.logo-text
-{
-  display: inline;
-  position: absolute;
-  left: -299px;
-  transition: var(--transition-speed);
-}
-
-.navbar:hover .logo svg {
-  transform: rotate(-180deg);
-}
-
-
-.fa-primary {
-  color: #f76a00;
-}
-
-.fa-secondary {
-  color: #f77f00;
-}
-
-.fa-primary,
-.fa-secondary {
-  transition: var(--transition-speed);
-}
-
-/* Small screens */
-@media only screen and (max-width: 600px) {
-  .navbar {
-    position: absolute;
-    top: 70px;
-  }
- .nav-link svg {
-  width: 1.5rem;
-  min-width: 1rem;
-  margin: 0 1.3rem;
-}
-
-  .logo {
-    display: none;
-  }
-    
-  .nav-link {
-    justify-content: center;
-  }
-}
-
-/* Large screens */
-@media only screen and (min-width: 600px) {
-  .navbar {
-    top: 0;
-    width: 5rem;
-    height: 100vh;
-  }
-
-  .navbar:hover {
-    width: 10rem;
-  }
-
-  .navbar:hover .link-text {
-    display: inline;
-  }
-
-  .navbar:hover .logo svg
-  {
-    margin-left: 11rem;
-  }
-
-  .navbar:hover .logo-text
-  {
-    left: 0px;
-  }
-}
-
 .wrapper{
     margin: 0;
     padding: 0;
@@ -198,7 +30,7 @@ body::-webkit-scrollbar-thumb {
     padding: 10px;
 }
 .home-btn a:hover{
-    background:#f77f00;
+    background:#fca311;
     color: #fff;
     display: flex;
 }
@@ -208,7 +40,7 @@ h1{
     font-size: 55px;
     letter-spacing: 4px;
     padding: 50px 0 20px;
-    color: #f77f00;
+    color: #fca311;
     text-align: center;
 }
 p{
@@ -221,8 +53,7 @@ p{
 }
 .contain{
     width: 60%;
-    left: 60px;
-    padding-left: 15em;
+    padding-left: 21em;
     position: relative;
     color: aliceblue;
 }
@@ -247,7 +78,7 @@ p{
     border: 1px solid #333;
 }
 .btn a:hover{
-    background:#f77f00;
+    background:#fca311;
     color: #fff;
     display: flex;
     width: 100%;
@@ -278,7 +109,7 @@ p{
 
 .card-image{
 	grid-area: image;
-	background: url("../img/design.png");
+	background: url("../img/sentiment.png");
 	border-top-left-radius: 15px;
 	border-top-right-radius: 15px;
 	background-size: cover;
@@ -310,7 +141,7 @@ p{
 
 
 .card-image.card-2{
-	background:url(../img/editing.png);
+	background:url(../img/word2vec.png);
 	background-size: cover;
 }
 
