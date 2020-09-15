@@ -9,7 +9,7 @@ background-image: linear-gradient(0deg, #42959c 0%, #27028c 100%);
 :root {
   font-size: 16px;
   font-family: 'Overpass',sans-serif;
-  --text-primary: #b6b6b6;
+  --text-primary: #ffffff;
   --text-secondary: #ececec;
   --bg-primary: #23232e;
   --bg-secondary: #141418;
@@ -58,7 +58,7 @@ body::-webkit-scrollbar-thumb {
   height: 5rem;
   color: white;
   text-decoration: none;
-  filter: grayscale(100%) opacity(0.7);
+  filter: grayscale(100%) opacity(1);
   transition: var(--transition-speed);
 }
 
