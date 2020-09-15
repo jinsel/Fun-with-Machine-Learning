@@ -1,4 +1,4 @@
-# Fun-with-Machine-Learning
+# :notes: Fun with Machine Learning :computer:
 Check the Website:  https://jinsel.github.io/Fun-with-Machine-Learning/ <br>
 This project is the showcase that how Machine Learning and AI can be so intresting and so much fun to play.<br>
 Here we are using the different concept of Deep Learning:<br>
