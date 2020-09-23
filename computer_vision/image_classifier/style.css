@@ -1,0 +1,59 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  background-color: #7209b7;
+}
+
+h1 {
+  font-family: 'PressStart2PRegular';
+  font-size: 45px;
+  color: #fb8b24;
+  text-align: center;
+  padding-top: 55px;
+}
+
+.service {
+  max-width: 500px;
+  margin: 0 auto;
+  height: 600px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.card {
+  display: grid;
+  grid-template-columns: 350px;
+  grid-template-rows: 210px 210px;
+  grid-template-areas: "image""text";
+  border-radius: 18px;
+  background: white;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+  text-align: center;
+  transition: 0.5s ease;
+  cursor: pointer;
+  margin: 10px 70px 0;
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+
+.video_cam {
+  display: grid;
+  grid-template-columns: 350px;
+  grid-template-rows: 210px 210px;
+  grid-template-areas: "image""text";
+  border-radius: 18px;
+  background: black;
+  text-align: center;
+  transition: 0.5s ease;
+  cursor: pointer;
+  margin: 10px 70px 0;
+  margin-bottom: 30px;
+}
