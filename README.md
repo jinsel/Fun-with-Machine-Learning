@@ -1,10 +1,11 @@
 # :notes: Fun with Machine Learning :computer:
-Check the Website:  https://jinsel.github.io/Fun-with-Machine-Learning/ <br>
+We were making this Website cool:  https://jinsel.github.io/Fun-with-Machine-Learning/ <br>
 This project is the showcase that how Machine Learning and AI can be so intresting and so much fun to play.<br>
 Here we are using the different concept of Deep Learning.:<br>
 
 Tools:<br>
 Tensorflow js : https://www.tensorflow.org/js<br>
+P5*js: https://p5js.org/<br>
 ML5.js : https://ml5js.org/<br>
 Teachable Machine : https://teachablemachine.withgoogle.com/
 
@@ -18,3 +19,7 @@ Please refer to each project's style and contribution guidelines for submitting 
    
 **NOTE:** Be sure to merge the latest from "upstream" before making a pull request!<br>
 We Love to have your creative and cool idea in this project. Let's Contribute NOW
+
+Feel free to submit issues and enhancement requests.
+
+**Join our slack channel:** https://join.slack.com/t/fwmlworkspace/shared_invite/zt-hl7qr8za-B3AWhl_qEhC0GL9p6_0AFA
