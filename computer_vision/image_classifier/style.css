@@ -10,6 +10,10 @@ body {
   background-color: #7209b7;
 }
 
+canvas {
+  align-items: center;
+}
+
 h1 {
   font-family: 'PressStart2PRegular';
   font-size: 45px;
@@ -29,31 +33,37 @@ h1 {
 
 
 .card {
+  z-index: 1;
   display: grid;
-  grid-template-columns: 350px;
-  grid-template-rows: 210px 210px;
-  grid-template-areas: "image""text";
+  width: 50%;
   border-radius: 18px;
   background: white;
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
   text-align: center;
+  align-items: center;
   transition: 0.5s ease;
   cursor: pointer;
   margin: 10px 70px 0;
   margin-bottom: 30px;
-  overflow: hidden;
 }
 
-.video_cam {
-  display: grid;
-  grid-template-columns: 350px;
-  grid-template-rows: 210px 210px;
-  grid-template-areas: "image""text";
-  border-radius: 18px;
-  background: black;
-  text-align: center;
+/* #label_model {
+  position: relative;
+  height: 60px;
+  z-index: 20;
+  width: 30%;
+  border-radius: 10px;
+  background: white;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
   transition: 0.5s ease;
   cursor: pointer;
-  margin: 10px 70px 0;
+  margin: 34% 50%;
   margin-bottom: 30px;
 }
+
+p {
+  font-size: 22px;
+  text-align: center;
+  font-family: 'PressStart2PRegular';
+  margin-top: 10px;
+} */
