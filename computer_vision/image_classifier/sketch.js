@@ -1,8 +1,10 @@
 let video;
 // For displaying the label
-let label = "Model is Loading ⏳";
+let label = "Model is Loading"
+let confidence;
 // The classifier
 let classifier;
+let loading;
 let modelURL = "https://teachablemachine.withgoogle.com/models/VYn46vwaE/";
 
 // STEP 1: Load the model!
@@ -12,8 +14,6 @@ function preload() {
 
 function setup() {
   canv = createCanvas(640, 520);
-  /* loading = createP("Model is Loading ⏳");
-  loading.parent("label_text"); */
   // Create the video
   video = createCapture(VIDEO);
   video.hide();
@@ -35,8 +35,8 @@ function draw() {
   image(video, 40, 40, 560, 400);
 
   // STEP 4: Draw the label
-  text = drawText();
-
+  drawText();
+  drawConf();
   // Pick an emoji
   let emoji;
   if (label == "dog" || label == "Dog") {
@@ -54,7 +54,6 @@ function draw() {
   // Draw the emoji
   textSize(100);
   text(emoji, width / 2, height / 2 + 150);
-  console.log(label);
 }
 
 function drawText(font) {
@@ -62,6 +61,13 @@ function drawText(font) {
   fill("#023047");
   textFont("PressStart2PRegular", 30);
   text(label, width / 2 + 10, height - 20);
+}
+
+function drawConf(font) {
+  textAlign(CENTER, CENTER);
+  fill("#ED225D");
+  textFont("PressStart2PRegular", 20);
+  text(confidence, width / 2 + 300, height - 20);
 }
 
 // STEP 3: Get the classification!
@@ -73,6 +79,6 @@ function gotResults(error, results) {
   }
   // Store the label and classify again!
   label = results[0].label;
-
+  confidence = results[0].confidence;
   classifyVideo();
 }

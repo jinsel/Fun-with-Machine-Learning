@@ -7,7 +7,7 @@ body {
 body {
   height: 100%;
   width: 100%;
-  background-color: #7209b7;
+  background-color: #124861;
 }
 
 canvas {
@@ -47,6 +47,7 @@ h1 {
   margin-bottom: 30px;
 }
 
+
 /* #label_model {
   position: relative;
   height: 60px;
@@ -58,12 +59,13 @@ h1 {
   transition: 0.5s ease;
   cursor: pointer;
   margin: 34% 50%;
-  margin-bottom: 30px;
-}
+  margin-bottom: 50px;
+  margin-top: 50px;
+} */
 
 p {
   font-size: 22px;
   text-align: center;
   font-family: 'PressStart2PRegular';
   margin-top: 10px;
-} */
+}

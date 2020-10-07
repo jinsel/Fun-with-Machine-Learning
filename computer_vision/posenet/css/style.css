@@ -1,0 +1,148 @@
+:root {
+  --box-size: 300px;
+  --gray: #eddcd2;
+}
+
+body {
+  background-color: #124861;
+  font-family: "Barlow", sans-serif;
+  letter-spacing: 0.5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  justify-content: space-between;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+section#model {
+  margin-top: 90px;
+}
+
+section#info {
+  margin-top: 50px;
+}
+
+section>* {
+  margin: 14px;
+}
+
+a,
+h1,
+h2 {
+  text-align: center;
+}
+
+a {
+  color: #000;
+}
+
+h1 {
+  line-height: 29px;
+  font-family: 'Dosis', sans-serif;
+  font-size: 45px;
+  font-weight: 600;
+  color: #fb8b24;
+
+}
+
+h2 {
+  font-size: 18px;
+  line-height: 22px;
+}
+
+#webcam-wrapper {
+  width: var(--box-size);
+  height: var(--box-size);
+  background-color: var(--gray);
+  border-radius: 4px;
+  overflow: hidden;
+  position: relative;
+}
+
+.loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border: 4px solid #ccc;
+  /* Light grey */
+  border-top: 4px solid #fff;
+  /* Blue */
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+#webcam-pose-canvas {
+  position: relative;
+}
+
+#webcam {
+  width: var(--box-size);
+  height: var(--box-size);
+  transform: rotateY(180deg);
+}
+
+#graph-wrapper>div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+#graph-wrapper>div>* {
+  display: inline-block;
+  width: var(--box-size);
+  margin: 0 10px;
+}
+
+#graph-wrapper>div> :first-child {
+  text-align: right;
+}
+
+#graph-wrapper>div>progress {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 28px;
+}
+
+#graph-wrapper>div>progress::-webkit-progress-bar {
+  border-radius: 4px;
+  background-color: var(--color-light);
+  border: 1px solid var(--color);
+}
+
+#graph-wrapper>div>progress::-webkit-progress-value {
+  border-radius: 2px;
+  background-color: var(--color);
+}
+
+footer {
+  width: 100%;
+  text-align: right;
+  padding: 25px;
+}
+
+footer * {
+  color: var(--gray);
+  text-align: right;
+}
