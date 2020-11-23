@@ -2,7 +2,7 @@ let labels = [];
 let bars = {};
 let graphWrapper;
 
-// these are the colors of our bars
+// these are the colors of bars
 let colors = ['#E67701', '#D84C6F', '#794AEF', '#1291D0'];
 let lightColors = ['#FFECE2', '#FFE9EC', '#F1F0FF', '#E2F5FF'];
 
