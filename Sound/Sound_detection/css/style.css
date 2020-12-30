@@ -1,0 +1,134 @@
+:root {
+  --box-size: 200px;
+  --inner-scale: 0.5;
+  --outer-scale: 0.6;
+  --gray: #9aa0a6;
+}
+body {
+  font-family: 'Barlow', sans-serif;
+  letter-spacing: 0.5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  justify-content: space-between;
+}
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+section#model {
+  margin-top: 90px;
+}
+section#info {
+  margin-top: 50px;
+}
+section > * {
+  margin: 14px;
+}
+a,
+h1,
+h2 {
+  text-align: center;
+}
+a {
+  color: #000;
+}
+h1 {
+  font-size: 24px;
+  line-height: 29px;
+}
+h2 {
+  font-size: 18px;
+  line-height: 22px;
+}
+#mic-wrapper {
+  width: var(--box-size);
+  height: var(--box-size);
+  position: relative;
+}
+#mic-wrapper > div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 0;
+  transform: translate(-50%, -50%);
+}
+/* .mic-circle.outer {
+  background-color: #f002;
+  transform: scale(var(--outer-scale));
+}
+.mic-circle.inner {
+  background-color: #f00;
+  transform: scale(var(--inner-scale));
+}
+.mic-circle.inner,
+.mic-circle.outer {
+  width: var(--box-size);
+  height: var(--box-size);
+  border-radius: var(--box-size);
+  overflow: hidden;
+  transition: transform 0.5s ease;
+} */
+#mic-loading {
+  display: inline-block;
+  background-color:  rgba(255, 0, 0,1);
+  width: calc(var(--box-size) / 1.7);
+  height: calc(var(--box-size) / 1.7);
+  border: 3px solid rgba(255, 255,255,0.3);
+  /* border: 3px solid rgb(255, 255,255); */
+  border-radius: 50%;
+  /* border-top-color: rgba(255, 255,255,.7); */
+  animation: spin .5s ease-in-out infinite;
+}
+@keyframes spin {
+  to {
+      /* transform: rotate(360deg); */
+      border: 6px solid rgb(255, 255,255);
+  }
+}
+img.mic-icon {
+  width: 60px;
+  height: 60px;
+}
+#graph-wrapper > div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0;
+}
+#graph-wrapper > div > * {
+  display: inline-block;
+  width: var(--box-size);
+  margin: 0 10px;
+}
+#graph-wrapper > div > :first-child {
+  text-align: right;
+}
+#graph-wrapper > div > progress {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 28px;
+}
+#graph-wrapper > div > progress::-webkit-progress-bar {
+  border-radius: 4px;
+  background-color: var(--color-light);
+  border: 1px solid var(--color);
+}
+#graph-wrapper > div > progress::-webkit-progress-value {
+  border-radius: 2px;
+  background-color: var(--color);
+}
+footer {
+  width: 100%;
+  text-align: right;
+  padding: 25px;
+}
+footer * {
+  color: var(--gray);
+  text-align: right;
+}

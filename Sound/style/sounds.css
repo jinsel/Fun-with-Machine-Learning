@@ -298,15 +298,23 @@ p{
 
 .card-text h2{
 	margin-top: 0px;
-	font-size: 28px;
-    font-family: var(--ff-primary);
-    color: var(--clr-accent);
-
+  font-size: 28px;
+  text-decoration: none;
+  font-family: var(--ff-primary);
+  color: var(--clr-accent);
+}
+.card-text h2 a{
+  text-decoration: none;
+  font-family: var(--ff-primary);
+  color: var(--clr-accent);
 }
 
 .card:hover{
 	transform: scale(1.1);
 	box-shadow: 5px 5px 15px rgba(0,0,0,0.5);
+}
+.card:hover h2 a{
+  color:purple;
 }
 
 

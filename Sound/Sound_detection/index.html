@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>Audio Model Demo - Teachable Machine</title>
+  <title>Audio Model🎧</title>
   <!-- don't mind these: -->
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -17,15 +17,14 @@
   <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/speech-commands@0.4.0/dist/speech-commands.min.js">
   </script>
   <!-- these load our code: -->
-  <script type="module" src="./js/model.js"></script>
+  <script type="module" src="./js/model-runner.js"></script>
   <script type="module" src="./js/bar-graph.js"></script>
   <script type="module" src="./js/audio-visualizer.js"></script>
 </head>
 
 <body>
   <section id="model">
-    <h1>I taught a machine learning model to recognize noises.</h1>
-    <h2>Try whistling or snapping to get started.</h2>
+    <h1>Try to give say (UP⬆ DOWN⬇ LEFT⬅ RIGHT➡)</h1> 
     <div id="mic-wrapper">
       <div>
         <div id="mic-loading"></div>
@@ -38,7 +37,7 @@
   </section>
 
   <script type="module">
-    import { setupModel } from './js/model.js';
+    import { setupModel } from './js/model-runner.js';
             import { setupBarGraph, updateBarGraph } from './js/bar-graph.js';
             let URL = 'https://teachablemachine.withgoogle.com/models/6VNfJgynT/';
             setupBarGraph(URL);
