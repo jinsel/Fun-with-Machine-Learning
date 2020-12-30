@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Overpass&display=swap');
+body{
+    height: 100%;
+    width: 100%;
+    background-color:#2a9d8f;
+
+}
+h1{ 
+    font-family: 'Anton',sans-serif;
+    font-weight: normal;
+    font-size: 45px;
+    letter-spacing: 4px;
+    padding: 50px 0 20px;
+    color: white;
+    text-align: center;
+}
+p{
+    font-family: 'Overpass',sans-serif;
+    font-weight: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    margin-left: 10em;
+    margin-right: 10em;
+}
+

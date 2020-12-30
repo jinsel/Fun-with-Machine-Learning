@@ -233,6 +233,14 @@ p{
     justify-content: space-between;
     
 }
+.card-text h2 a{
+  text-decoration: none;
+  color: #141418;
+}
+.card-text h2 a:hover{
+  text-decoration: none;
+  color:#f76a00;
+}
 .btn{
     margin-left: 90%;
     margin-bottom: 10px;
